@@ -44,7 +44,7 @@
 	            dynamic_sidebar();
             } ?>
 
-            <?php if (method_exists('ShashinWp', 'display')) : ?>
+            <?php if (method_exists('ShashinWp', 'display')) { ?>
                 <li>
                 <h2>Random Pictures</h2>
                 <div>
@@ -63,7 +63,22 @@
                 ?>
                 </div>
                 </li>
-            <?php endif; ?>
+
+
+            <?php }
+
+                if (function_exists('JPV_display_top_posts')) {
+                    echo '<h2>Popular Posts <small>(last 100 days)</small></h2>';
+                    echo '<li>';
+                    JPV_display_top_posts(array(
+                        'days' => '100',
+                        'limit' => '5',
+                        'exclude' => '',
+                        'excludeCustomPostTypes' => false,
+                        'displayViews' => true
+                    ));
+                    echo '</li>';
+                } ?>
 
             <li>
                 <h2>Flotsam</h2>
