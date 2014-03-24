@@ -18,6 +18,7 @@
         </ul>
     </div>
 
+    <div class="welcome-gutter"></div>
     <div id="welcome-middle" class="welcome-category">
         <a href="<?php echo $technical_link; ?>"><img class="welcome-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/biz_card.png" width="280" height="160" alt="Michael Toppa - Web Architect" /></a>
 
@@ -29,6 +30,7 @@
             <li><em><a href="<?php echo $technical_link; ?>">More...</a></em></li>
         </ul>
     </div>
+    <div class="welcome-gutter"></div>
 
     <div id="welcome-right" class="welcome-category">
         <a href="<?php echo $japan_link; ?>"><img class="welcome-image" src="<?php bloginfo('stylesheet_directory'); ?>/images/kanda-matsuri.png" width="280" height="160" alt="Kanda Masuri 2007" /></a>

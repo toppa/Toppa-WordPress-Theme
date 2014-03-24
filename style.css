@@ -85,6 +85,10 @@ strong, b {
     font-weight: bolder;
 }
 
+small {
+    font-size: 0.5em;
+}
+
 blockquote, q {
     quotes: none;
 }
@@ -240,11 +244,18 @@ input[type='text'], input[type='submit'], textarea {
 
 #welcome {
     margin: 0 4.444444444444%; /* 40px / 900px */
+    width: 100%;
 }
 
 .welcome-category {
-    width: 33.33333%;
+    width: 27.33333%;
     float: left;
+}
+
+.welcome-gutter {
+    width: 3%;
+    float: left;
+    padding: 0.5em;
 }
 
 .welcome-category p {
@@ -297,7 +308,7 @@ input[type='text'], input[type='submit'], textarea {
 
 .article-content .sharedaddy {
     position: absolute;
-    bottom: -4.4em;
+    bottom: -4.2em;
     left: 0.9em;
 }
 
@@ -545,6 +556,10 @@ input[type='text'], input[type='submit'], textarea {
         margin-left: 0;
         margin-top: 0.5em;
     }
+
+    .welcome-category h2 {
+        font-size: 1.5em; /* 24px / 16px */
+    }
 }
 
 @media screen and (max-width: 1050px)  {
@@ -560,6 +575,14 @@ input[type='text'], input[type='submit'], textarea {
     .welcome-category {
         width: 100%;
         margin-bottom: 1em;
+    }
+
+    .welcome-category h2 {
+        font-size: 2em; /* 32px / 16px */
+    }
+
+    .welcome-gutter {
+        display: none;
     }
 
     #welcome-footer, #welcome-footer + #footer {
@@ -584,5 +607,11 @@ input[type='text'], input[type='submit'], textarea {
         float: left;
         line-height: 1em;
         margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+    .article-footer {
+        padding-top: 3em;
     }
 }
