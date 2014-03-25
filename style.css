@@ -330,6 +330,10 @@ input[type='text'], input[type='submit'], textarea {
     list-style: square;
 }
 
+.article-content ol, #comments ol {
+    list-style: decimal;
+}
+
 .article-content ul,
 .article-content ol,
 #comments ul,
